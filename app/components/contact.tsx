@@ -26,7 +26,7 @@ function Contact() {
       const form1=form.current as HTMLFormElement;
       
       emailjs
-        .sendForm(process.env.NEXT_SERVICE_ID as string,process.env.NEXT_PUBLIC_TEMPLATE as string,form1, {
+        .sendForm(process.env.NEXT_PUBLIC_SERVICE as string,process.env.NEXT_PUBLIC_TEMPLATE as string,form1, {
           publicKey:process.env.NEXT_PUBLIC_KEY,
         })
         .then(
