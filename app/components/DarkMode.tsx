@@ -22,7 +22,7 @@ function DarkMode() {
       }
       else 
       {
-        document.body.style.backgroundImage="linear-gradient(to bottom ,#646464,white)"
+        document.body.style.backgroundImage="linear-gradient(to bottom ,#101828,white)"
         consommerContext?.changerMode1();   
       }
 

@@ -23,7 +23,7 @@ function Intro() {
   consommerContext?.changerElement('Home')
   },[inView])
   return (
-    <section id='home' ref={ref}  className='mb-28 scroll-mt-28 text-center sm:mb-0 w-full  '>
+    <section id='home' ref={ref}  className='mb-28 scroll-mt-28 text-center sm:mb-0 w-full'>
           <div className='flex flex-col items-center gap-[20px] w-full '>
                     <motion.div  className='relative' 
                     initial={{scale:0,opacity:0}} animate={{scale:1,opacity:1}} >
