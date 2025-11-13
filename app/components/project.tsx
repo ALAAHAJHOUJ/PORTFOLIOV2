@@ -36,7 +36,7 @@ function Project({title,description,tech,image,cle}:propr) {
        
        <motion.section onClick={()=>{naviguer.push(url)}}  style={consommerContext?.mode=="black"?{background:"rgba(229, 231, 235,0.4)",scale:scaleProgress,opacity:opacityProgress,color:"white"}:{background:"#f3f4f6",scale:scaleProgress,opacity:opacityProgress,color:"black"}} ref={ref1} className=' group hover:bg-gray-300! active:bg-gray-300! focus:bg-gray-300! cursor-pointer w-[90%] sm:w-full min-w-[300px] max-w-[42rem] h-[250px] sm:h-[300px] pb-[30px]  border border-black/3 overflow-hidden   relative rounded-[10px]'>
               <div style={consommerContext?.mode=="black"?{color:"white"}:{}} className={cle!="1"?'py-4 pl-3 pr-3 sm:pl-10 sm:pr-2 sm:pt-10 w-full':'py-4 pl-3 pr-3 mr-[170px] sm:pl-10 sm:pr-2 sm:pt-10  w-full sm:w-[50%] absolute sm:right-0 sm:translate-x-[160px] '}>
-                      <h3 style={consommerContext?.mode=="black"?{color:"white"}:{}} className='text-2xl font-semibold'>{title}</h3>
+                      <h3 style={consommerContext?.mode=="black"?{color:"white"}:{color:"#364153"}} className='text-2xl font-semibold'>{title}</h3>
                       <p style={consommerContext?.mode=="black"?{color:"white"}:{}} className={cle!="1"?'mt-2 leading-relaxed text-gray-700 w-[100%] sm:w-[50%]':'mt-2 leading-relaxed text-gray-700 w-[100%] '}>{description}</p>
                       <ul className={cle!="1"?'flex flex-wrap mt-4 gap-2 w-full sm:w-[50%]':'flex flex-wrap mt-4 gap-2 w-full '}>
                         {
