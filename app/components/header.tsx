@@ -20,7 +20,7 @@ export default function Header() {
     <header className="z-[900] relative">
       <motion.div
         className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white
-      bg-[#ffffffee] shadow-lg shadow-black/3
+        bg-[#ffffffee] shadow-lg shadow-black/3
         backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
 
         initial={{ y: -100, x: "-50%", opacity: 0 }}
@@ -30,10 +30,10 @@ export default function Header() {
       </motion.div>
 
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2
-        py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
+        py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 ">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center
-         gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] 
-         sm:flex-nowrap sm:gap-5">
+         gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-fit
+         sm:flex-nowrap sm:gap-6">
          {
             links.map((ele,key)=>{
                 return <motion.li key={key} 
@@ -47,7 +47,7 @@ export default function Header() {
 
                               {ele.name ==consommercontext?.elementSel?
                                 <motion.div
-                                  className="rounded-full w-full h-full absolute inset-0 -z-10 bg-gray-700"
+                                  className="rounded-full absolute inset-0 -z-10 bg-gray-700"
                                   layoutId="activeSection"
                                   transition={{
                                     type: "spring",
