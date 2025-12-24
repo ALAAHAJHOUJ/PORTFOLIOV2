@@ -91,17 +91,17 @@ export const projectsData = [
     imageUrl:"/weatherapp.png",
   },
   {
-    title: "Gestion des utilisateurs",
+    title: "User Management",
     description:
       "User management application (modification, addition, deletion) developed with React JS and Express JS.",
     tags: ["React", "TailwindCss","express js","Mysql"],
     imageUrl:"/UsersApp.png",
   },
   {
-    title: "covoiturage",
+    title: "School Management",
     description:
-      "Carpooling application to facilitate transportation requests for customers",
+      "School Management App to facilitate access to resources for Students",
     tags: ["React", "Mysql", "TailwindCss", "Framer-motion"],
-    imageUrl:"/covoiturage2.png",
+    imageUrl:"/School.png",
   },
 ] as const;

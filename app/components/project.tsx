@@ -22,7 +22,7 @@ function Project({title,description,tech,image,cle}:propr) {
   const naviguer=useRouter();
   const ref1=useRef<null|HTMLElement>(null);
   const consommerContext=useContext(context1);
-  const url=title=="WeatherApp"?"https://weatherapp-dun-mu.vercel.app/":title=="Gestion des utilisateurs"?"https://Users-dun-mu.vercel.app/":"https://dernierProjet-dun-mu.vercel.app/"
+  const url=title=="WeatherApp"?"https://weatherapp-dun-mu.vercel.app/":title=="User Management"?"https://Users-dun-mu.vercel.app/":"https://dernierProjet-dun-mu.vercel.app/"
   const scroll=useScroll({
     target:ref1,
     offset:["0 1","1.44 1"]
