@@ -101,7 +101,7 @@ export const projectsData = [
     title: "School Management",
     description:
       "School Management App to facilitate access to resources for Students",
-    tags: ["React", "Mysql", "TailwindCss", "Framer-motion"],
+    tags: ["React", "Mysql", "TailwindCss", "express js"],
     imageUrl:"/School.png",
   },
 ] as const;
