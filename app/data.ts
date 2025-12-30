@@ -100,7 +100,7 @@ export const projectsData = [
   {
     title: "School Management",
     description:
-      "School Management App to facilitate access to resources for Students",
+      "a simple school landing page (just front end)",
     tags: ["React", "Mysql", "TailwindCss", "express js"],
     imageUrl:"/School.png",
   },
