@@ -19,7 +19,6 @@ type propr={
 
 
 function Project({title,description,tech,image,cle}:propr) {
-  const naviguer=useRouter();
   const ref1=useRef<null|HTMLElement>(null);
   const consommerContext=useContext(context1);
   const url=title=="WeatherApp"?"https://weatherapp-dun-mu.vercel.app/":title=="User Management"?"https://Users-dun-mu.vercel.app/":"https://school-landing-page-orpin.vercel.app/"
@@ -35,7 +34,7 @@ function Project({title,description,tech,image,cle}:propr) {
   return (
        
        <motion.section   style={consommerContext?.mode=="black"?{background:"rgba(229, 231, 235,0.4)",scale:scaleProgress,opacity:opacityProgress,color:"white"}:{background:"#f3f4f6",scale:scaleProgress,opacity:opacityProgress,color:"black"}} ref={ref1} className=' group hover:bg-gray-300! active:bg-gray-300! focus:bg-gray-300! cursor-pointer w-[90%] sm:w-full min-w-[300px] max-w-[42rem] h-[250px] sm:h-[300px] pb-[30px]  border border-black/3 overflow-hidden   relative rounded-[10px]'>
-              <a href={url} target='_blank' className='absolute top-0 right-0 w-full h-full'></a>
+              <a href={url} target='_blank' className='absolute top-0 right-0 w-full h-full z-1000'></a>
               <div style={consommerContext?.mode=="black"?{color:"white"}:{}} className={cle!="1"?'py-4 pl-3 pr-3 sm:pl-10 sm:pr-2 sm:pt-10 w-full':'py-4 pl-3 pr-3 mr-[170px] sm:pl-10 sm:pr-2 sm:pt-10  w-full sm:w-[50%] absolute sm:right-0 sm:translate-x-[160px] '}>
                       <h3 style={consommerContext?.mode=="black"?{color:"white"}:{color:"#364153"}} className='text-2xl font-semibold'>{title}</h3>
                       <p style={consommerContext?.mode=="black"?{color:"white"}:{}} className={cle!="1"?'mt-2 leading-relaxed text-gray-700 w-[100%] sm:w-[50%]':'mt-2 leading-relaxed text-gray-700 w-[100%] '}>{description}</p>
