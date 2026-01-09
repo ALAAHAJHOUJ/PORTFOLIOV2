@@ -2,11 +2,13 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import Submitbtn from './submitbtn'
 import { motion } from 'framer-motion'
-
 import emailjs from '@emailjs/browser';
 import { IoIosAlert, IoMdCloseCircle, IoMdCloudDone } from 'react-icons/io';
 import { context1 } from './Context';
 import { useInView } from 'react-intersection-observer';
+
+
+
 
 function Contact() {
   const ref1=useRef<null|HTMLInputElement>(null);
@@ -26,8 +28,8 @@ function Contact() {
       const form1=form.current as HTMLFormElement;
       
       emailjs
-        .sendForm(process.env.NEXT_PUBLIC_SERVICE as string,process.env.NEXT_PUBLIC_TEMPLATE as string,form1, {
-          publicKey:process.env.NEXT_PUBLIC_KEY,
+        .sendForm("service_6i6uqcr","template_i0iyat8",form1, {
+          publicKey:"8kFD5uFBz3jScJZHP",
         })
         .then(
           () => {

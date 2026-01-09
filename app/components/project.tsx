@@ -22,7 +22,7 @@ function Project({title,description,tech,image,cle}:propr) {
   const naviguer=useRouter();
   const ref1=useRef<null|HTMLElement>(null);
   const consommerContext=useContext(context1);
-  const url=title=="WeatherApp"?"https://weatherapp-dun-mu.vercel.app/":title=="User Management"?"https://Users-dun-mu.vercel.app/":"https://dernierProjet-dun-mu.vercel.app/"
+  const url=title=="WeatherApp"?"https://weatherapp-dun-mu.vercel.app/":title=="User Management"?"https://Users-dun-mu.vercel.app/":"https://school-landing-page-orpin.vercel.app/"
   const scroll=useScroll({
     target:ref1,
     offset:["0 1","1.44 1"]
@@ -48,7 +48,7 @@ function Project({title,description,tech,image,cle}:propr) {
               </div>
 
               <div className={cle!="1"?'overflow-hidden w-[420px] h-[220px]  absolute top-[90px] -right-40 w-[28.25rem] rounded-t-lg shadow-2xl hidden sm:block group-hover:rotate-[-10deg] group-hover:scale-[1.16] group-hover:translate-x-[10px] transition-all':'overflow-hidden w-[420px] h-[220px]  absolute top-[90px] left-[-160px]  rounded-t-lg shadow-2xl hidden sm:block group-hover:rotate-[10deg] group-hover:scale-[1.16] group-hover:translate-x-[10px] transition-all'}>
-                        <img alt='image de projet' src={image} className='w-full h-full  object-fill'></img>
+                      <img alt='image de projet' src={image} className='w-full h-full  object-fill'></img>
               </div>
 
        </motion.section>
