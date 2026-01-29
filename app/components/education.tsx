@@ -21,6 +21,7 @@ function Eduction() {
       if(inView && (new Date().getTime()-date1.getTime()>2000))
       consommerContext?.changerElement('Experience');
 
+
   },[inView])
 
 
@@ -33,14 +34,14 @@ function Eduction() {
             return <VerticalTimelineElement key={key}
              contentStyle={consommerContext?.mode=="black"?{boxShadow:"none",
                             background:"#ffffff80",
-                            border:"3px solid rgba(0,0,0,0.1)",
+                            border:"2px solid rgba(0,0,0,0.1)",
                             textAlign:"left",
                             borderRadius:"10px",
                             boxSizing:"border-box"
                            }:{
                             boxShadow:"none",
                             background:"#EDEBEB",
-                            border:"3px solid rgba(0,0,0,0.1)",
+                            border:"2px solid rgba(0,0,0,0.1)",
                             textAlign:"left",
                             borderRadius:"10px",
                             boxSizing:"border-box"

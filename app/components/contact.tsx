@@ -153,7 +153,7 @@ function Contact() {
       <form action="" ref={form} className="mt-10 flex flex-col w-[90%] sm:w-[600px]">
         <input
           ref={ref1}
-          className="h-14 px-4  rounded-lg border border-[#00000074]  transition-all "
+          className="h-14 px-4  rounded-lg border border-[#00000074]  transition-all bg-white"
           name="senderEmail"
           type="email"
           required
@@ -164,7 +164,7 @@ function Contact() {
 
         <textarea
           ref={ref2}
-          className="h-52 pt-2.5 px-4 my-3 rounded-lg border border-[#00000074]  transition-all "
+          className="h-52 pt-2.5 px-4 my-3 rounded-lg border border-[#00000074]  transition-all bg-white"
           name="message"
           placeholder="Your message"
           required
