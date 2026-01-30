@@ -28,7 +28,7 @@ function Contact() {
       const form1=form.current as HTMLFormElement;
       
       emailjs
-        .sendForm("service_6i6uqcr","template_i0iyat8",form1, {
+        .sendForm("service_qoiproo","template_i0iyat8",form1, {
           publicKey:"8kFD5uFBz3jScJZHP",
         })
         .then(
