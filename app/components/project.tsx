@@ -35,7 +35,7 @@ function Project({title,description,tech,image,cle}:propr) {
 
   return (
        
-       <motion.section   style={consommerContext?.mode=="black"?{background:"rgba(229, 231, 235,0.4)",scale:scaleProgress,opacity:opacityProgress,color:"white"}:{background:"#f3f4f6",scale:scaleProgress,opacity:opacityProgress,color:"black"}} ref={ref1} className=' group hover:bg-gray-300! active:bg-gray-300! focus:bg-gray-300! cursor-pointer w-[90%] sm:w-full min-w-[300px] max-w-[42rem] h-[250px] sm:h-[300px] pb-[30px]  border border-black/3 overflow-hidden   relative rounded-[10px] z-10'>
+       <motion.section   style={consommerContext?.mode=="black"?{background:"rgba(229, 231, 235,0.4)",scale:scaleProgress,opacity:opacityProgress,color:"white"}:{background:"#efeff3",scale:scaleProgress,opacity:opacityProgress,color:"black"}} ref={ref1} className=' group hover:bg-gray-300! active:bg-gray-300! focus:bg-gray-300! cursor-pointer w-[90%] sm:w-full min-w-[300px] max-w-[42rem] h-[250px] sm:h-[300px] pb-[30px]  border border-black/3 overflow-hidden   relative rounded-[10px] z-10'>
               <a href={url} target='_blank' className='absolute top-0 right-0 w-full h-full z-10000'></a>
               <div style={consommerContext?.mode=="black"?{color:"white"}:{}} className={cle!="1"?'py-4 pl-3 pr-3 sm:pl-10 sm:pr-2 sm:pt-10 w-full':'py-4 pl-3 pr-3 mr-[170px] sm:pl-10 sm:pr-2 sm:pt-10  w-full sm:w-[50%] absolute sm:right-0 sm:translate-x-[160px] z-9'}>
                       <h3 style={consommerContext?.mode=="black"?{color:"white"}:{color:"#364153"}} className='text-2xl font-semibold'>{title}</h3>
