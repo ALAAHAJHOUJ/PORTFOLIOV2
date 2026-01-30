@@ -112,7 +112,7 @@ function Contact() {
 
   return (
     <motion.section ref={ref} id='contact' initial={{opacity:0}} whileInView={{opacity:1}} viewport={{ once: true }} transition={{duration:1.5}} className='w-full flex scroll-mt-28 justify-center mt-[100px] flex-col items-center gap-[20px]'>
-           {succes==true?<div  className="bg-[#00000070] z-[1000] h-[100vh] w-full bottom-0 fixed flex justify-center items-center ">
+           {succes==true?<div  className="bg-[#00000070] z-[90000] h-[100vh] w-full bottom-0 fixed flex justify-center items-center ">
                         <motion.div initial={{scale:0}} animate={{scale:1}} transition={{type: "spring",duration:0.7}} className="bg-white w-[300px] h-[300px] rounded-[10px] flex flex-col justify-center items-center gap-[20px]">
                           <IoMdCloudDone size={50} className="text-green-400"></IoMdCloudDone>
                           <div className="text-[20px] italic text-center w-full h-[50px] font-bold">email sent with succes</div>
@@ -122,7 +122,7 @@ function Contact() {
 
 
 
-           {error==true?<div   className="bg-[#00000070] z-[1000] h-[100vh] w-full bottom-0 fixed flex justify-center items-center">
+           {error==true?<div   className="bg-[#00000070] z-[90000] h-[100vh] w-full bottom-0 fixed flex justify-center items-center">
                         <motion.div initial={{scale:0}} animate={{scale:1}} transition={{type: "spring",duration:0.7}}  className="bg-white w-[300px] h-[300px] rounded-[10px] flex flex-col justify-center items-center gap-[20px]">
                           <IoMdCloseCircle size={50} className="text-red-500"></IoMdCloseCircle>
                           <div className="text-[20px] italic text-center w-full h-[50px] font-bold">Error,please try again</div>
@@ -131,7 +131,7 @@ function Contact() {
            </div>:<></>}
 
 
-           {error1!=""?<div className="bg-[#00000070] z-[1000] h-[100vh] w-full bottom-0  fixed flex justify-center items-center">
+           {error1!=""?<div className="bg-[#00000070] z-[90000] h-[100vh] w-full bottom-0  fixed flex justify-center items-center">
               <motion.div initial={{scale:0}} animate={{scale:1}} transition={{type: "spring",duration:0.7}} className="bg-white w-[300px] h-[300px] rounded-[10px] flex flex-col justify-center items-center gap-[20px]">
                 <IoIosAlert size={50}></IoIosAlert>
                  <div className="text-[20px] italic text-center w-full h-[50px] font-bold">{error1}</div>
