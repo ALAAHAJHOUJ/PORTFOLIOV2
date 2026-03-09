@@ -28,8 +28,8 @@ function Contact() {
       const form1=form.current as HTMLFormElement;
       
       emailjs
-        .sendForm("service_qoiproo","template_i0iyat8",form1, {
-          publicKey:"8kFD5uFBz3jScJZHP",
+        .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID as string,process.env.NEXT_PUBLIC_TEMPLATE_ID as string,form1, {
+          publicKey:process.env.NEXT_PUBLIC_API_KEY,
         })
         .then(
           () => {
