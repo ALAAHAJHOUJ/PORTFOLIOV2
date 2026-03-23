@@ -83,7 +83,7 @@ function Contact() {
 
 
 
-  const handlesubmit=(e: React.MouseEvent<HTMLButtonElement>)=>{
+  const handlesubmit=(e:React.FormEvent<HTMLFormElement>| React.MouseEvent<HTMLButtonElement>)=>{
       e.preventDefault();
       if(valider()==true)
       {
@@ -150,13 +150,12 @@ function Contact() {
         or through this form.
       </p>
 
-      <form action="" ref={form} className="mt-10 flex flex-col w-[90%] sm:w-[600px]">
+      <form onSubmit={(e)=>{e.preventDefault();handlesubmit(e)}} action="" ref={form} className="mt-10 flex flex-col w-[90%] sm:w-[600px]">
         <input
           ref={ref1}
           className="h-14 px-4  rounded-lg border border-[#00000074]  transition-all bg-white"
           name="senderEmail"
-          type="email"
-          required
+          type="text"
           maxLength={500}
           placeholder="Your email"
         />
@@ -167,7 +166,6 @@ function Contact() {
           className="h-52 pt-2.5 px-4 my-3 rounded-lg border border-[#00000074]  transition-all bg-white"
           name="message"
           placeholder="Your message"
-          required
           maxLength={5000}
         />
       </form>
